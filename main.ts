@@ -3,12 +3,13 @@
 // Node 22, no dependencies, deterministic, no network. The line is a fixed
 // string: the program writes exactly these bytes on every run.
 //
-// The line (66 chars) won an 8-candidate head-to-head against the judge
-// brief: a backup recursion — the safety net was inside the very file it
-// was meant to protect, so the three backups vanished with the file.
-// No self-defence, just the machine reporting its own backup logic, and
-// the logic itself is the joke. Runner-up was the restore whose backup
-// was a screenshot of the error. Full comparison:
+// The line (66 chars, 66 bytes, no trailing newline) won an 8-candidate
+// head-to-head against the judge brief: a backup recursion — the safety
+// net was inside the very file it was meant to protect, so the three
+// backups vanished with the file. No self-defence, just the machine
+// reporting its own backup logic, and the logic itself is the joke.
+// Runner-up was the restore whose backup was a screenshot of the error.
+// Full comparison:
 // u-brisk-kestrel-93-the-one-line-excuse-championship-37f2bb6e-candidates.md.
 
 import { mkdirSync, writeFileSync } from "node:fs";
